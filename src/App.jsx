@@ -70,7 +70,10 @@ function App() {
     try {
       setLoading(true);
       setError("");
-      const url = `https://gnews.io/api/v4/search?q=${query}&lang=${lang}&country=${country}&max=10&apikey=${API_KEY}`;
+     const url = `https://api.allorigins.win/raw?url=${encodeURIComponent(
+  `https://gnews.io/api/v4/search?q=${query}&lang=${lang}&country=${country}&max=10&apikey=${API_KEY}`
+)}`;
+
       const res = await fetch(url);
       const data = await res.json();
 
