@@ -187,7 +187,7 @@ function App() {
                   <img
                     src={article.image || "https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=Breaking+News"}
                     alt={article.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-55 object-cover group-hover:scale-100 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                     {article.source?.name || "News"}
